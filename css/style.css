@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+:root{
+--clr-primary:#1724dd;
+}
+*{
+box-sizing: border-box;
+margin: 0;
+padding:0;
+
+}
+.search-wrapper{
+font-family: Poppins;
+outline: 0;
+width: 30%;
+text-align: center;
+margin-left: 26.399em;
+margin-top: -9.5em;
+
+}
+::-webkit-file-upload-button{
+display: grid;
+grid-template-columns: repeat(auto-fit,100fr 1fr);
+border-radius: .25em;
+border:none;
+font-family: Poppins;
+color: white;
+background: linear-gradient(90deg,red,blue,violet,teal);
+outline: none;
+}
+.img-edit{
+border-radius: 50%;
+}
+.img{
+text-align: center;
+height: 1px;
+}
+
+body{
+background:linear-gradient(90deg,red,blue,violet,yellow,teal);
+font-family: Poppins;
+}
+
+[data-click-animation='pulse']:hover{
+animation: pulse 0.5s ease-in infinite;
+transition-duration: ease-in 1.4s;
+}
+[type='button'],[type='submit'],[type='reset']{
+border:none;
+outline: none;
+}
+
+
+    
+
+
+
+
+
+
+
+
+.menu-toggle{
+display:none;
+flex-direction: column;
+height: 20px;
+justify-content: space-between;
+position:relative;
+z-index: 999;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width:40px;
+    height:28px;
+    left:-5px;
+    top:-3px;
+    opacity: 0;
+    cursor:pointer;
+    z-index: 2;
+}
+
+.card{
+background-color: white;
+padding:calc(1.2em + 1.1rem);
+width: 22.2em;
+height: 19.2em;
+border-radius: 12px;
+}
+.card h3{
+color: #acacac;
+font-weight: bold;
+}
+
+.col-lg-10{
+flex: 0 0 1rem auto;
+width: 65.5555%;
+}
+.menu-toggle span{
+    display:block;
+    width:28px;
+    height:3px;
+    background-color:rgb(109, 97, 97);
+    border-radius: 3px;
+    transition: all 0.3s;
+}
+
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0 ;
+    }
+    
+    .menu-toggle span:nth-child(4){
+      transform-origin: 0 100% ;
+      }
+    
+    .menu-toggle input:checked ~ span:nth-child(2){
+    background-color: white;
+    transform: rotate(45deg) translate(-1px, -1px);
+    }
+    .menu-toggle input:checked ~ span:nth-child(4){
+      background-color: white;
+      transform: rotate(-45deg) translate(-1px,0); 
+      }
+    
+      .menu-toggle input:checked ~ span:nth-child(3){
+        opacity: 0;
+        transform: scale(0); 
+        }
+    
+    
+
+@keyframes pulse{
+    25%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+  }
+
+
+nav.sidebar{
+background-color: rgb(110, 19, 19);
+height: 222.4em;
+width: 22.3em;
+overflow: hidden;
+margin-top: -1.7em;
+}
+nav.sidebar ul{
+width: 40%;
+}
+code{
+font-family:'Courier New', Courier, monospace;
+}
+code.ftw-code{
+background-color: rgb(31, 29, 29);
+color: white;
+padding:5.9em;
+}
+.user-id{
+    background-color: black;
+    color: tomato;
+font-family: 'Courier New', Courier, monospace;
+}
+.sidebar li.nav_items  a{
+text-decoration: none;
+color: white;
+font-size: 1.4em;
+margin:50px auto;
+}
+.btn-primary{
+background-color:var(--clr-primary) ;
+color: white;
+display: inline-block;
+vertical-align: -1.699em middle;
+outline: none;
+width: 9.7em;
+border: none;
+border-radius: 40px;
+cursor: pointer;
+font-family: inherit;
+font-size: 1rem;
+padding: 10px;
+text-decoration: none;
+text-align: center;
+}
+.btn-primary:hover,
+.btn-primary:active{
+background: transparent;
+color: black;
+}
+.nav_items{
+list-style: none;
+padding-bottom: 0;
+padding-top: 0;
+padding-right: 0;
+}
+.profile-wrapper{
+text-align: center;
+}
+.profile-wrapper h1{
+color: rgb(255, 255, 255);
+}
+.profile-wrapper img{
+border-radius: 50%;
+width: 180px;
+height: 170px;
+}
+.followers{
+color:white
+}
+.btn {
+display: inline-block;
+font-size: 1.3em;
+width: 9em;
+background-color: rgb(26, 26, 131);
+color: white;
+outline: none;
+overflow: hidden;
+vertical-align: middle;
+    border:none;
+    box-shadow: none!important;
+    cursor: pointer;
+    user-select: none;
+}
+.form-control{
+display: inline-block;
+padding: .374rem .75rem;
+width: 100%;
+font-size: 1.1rem;
+line-height: 1.6;
+background-color: #ffff;
+color: #acacac;
+}
+header.login-forms{
+display: grid;
+grid-template-rows: 40fr 2fr 20fr 100fr;
+}
+.btn:hover {
+    color:#ffff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a1f50), to(#3e07be)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #d400ff, #05f7ff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #ff00aa, #01fa86); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #c300ff, #ffd900); /* IE10 */
+    background-image:      -o-linear-gradient(top, #f70c47, #f37500); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #9900ff, #00ffd5);
+}
+.btn:active{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a1f50), to(#3e07be)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #d400ff, #05f7ff); /* Chrome 10+, Saf5.1+, iOS 5+ */
+    background-image:    -moz-linear-gradient(top, #ff00aa, #01fa86); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #c300ff, #ffd900); /* IE10 */
+    background-image:      -o-linear-gradient(top, #f70c47, #f37500); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #9900ff, #00ffd5);
+}
+.btn:focus {
+    outline: none;
+    border-color:#BD4A39;
+}
+
+.update{
+    display: inline-block;
+    font-size: 1.3em;
+    width: 9em;
+    background-color: rgb(26, 26, 131);
+    color: white;
+    outline: none;
+    overflow: hidden;
+    vertical-align: middle;
+        border:none;
+        box-shadow: none!important;
+        cursor: pointer;
+        user-select: none;
+        font-family: inherit;
+}
+/* Follow Button Styles */
+
+button.followButton{
+    width:160px;
+}
+button.followButton.following{
+    background-color: #57A957;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#62c462), to(#57a957));
+    background-image: -moz-linear-gradient(top, #62c462, #57a957);
+    background-image: -ms-linear-gradient(top, #62c462, #57a957);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #62c462), color-stop(100%, #57a957));
+    background-image: -webkit-linear-gradient(top, #62c462, #57a957);
+    background-image: -o-linear-gradient(top, #62c462, #57a957);
+    background-image: linear-gradient(top, #62c462, #57a957);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#62c462', endColorstr='#57a957', GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #57A957 #57A957 #3D773D;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color:#fff;
+}
+button.followButton.unfollow{
+    background-color: #C43C35;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#ee5f5b), to(#c43c35));
+    background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
+    background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ee5f5b), color-stop(100%, #c43c35));
+    background-image: -webkit-linear-gradient(top, #ee5f5b, #c43c35);
+    background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
+    background-image: linear-gradient(top, #ee5f5b, #c43c35);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee5f5b', endColorstr='#c43c35', GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border-color: #C43C35 #C43C35 #882A25;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 768px){
+
+
+
+
+.sidebar li a{
+margin-bottom:5.3em;
+font-size: 0.7em;
+}
+.ads{
+position: fixed;
+border-radius: 12px;
+box-shadow: 0 2px 1px 0 rgb(0, 0, 0.6);
+}
+}
+@media only screen and (max-width: 576px){
+
+body{
+margin: 4.6em auto;
+}
+
+.sidebar li a{
+display: none;
+}
+
+.menu-toggle {
+display: flex;
+}
+.img-edit{
+padding-left: 13.8em;
+margin-left: 2.3em;
+}
+
+::-webkit-file-upload-button{
+    padding-left: 13.8em;
+    margin-left: 2.3em;
+}
+}
